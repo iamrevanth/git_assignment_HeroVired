@@ -12,8 +12,17 @@ class Calculator:
 	def multiply(self, a, b):
 		return a * b
 
+	# def divide(self, a, b):
+	# 	return a / b
+	
 	def divide(self, a, b):
-		return a / b
+		try:
+			if b == 0:
+				raise ValueError("Cannot divide by zero.")
+			return a / b
+		except ValueError as e:
+			print(f"Error: {e}")
+			return None
 	
 # TO-DO: Implement the following function to calculate the square root of a number.
 	def square_root(self, x):
@@ -30,3 +39,6 @@ if __name__ == "__main__":
 	# TO-DO: Uncomment and test the square root feature.
 	num3 = 25
 	print(f"The square root of {num3} = {calculator.square_root(num3)}")
+
+	num4 = 45
+	print(f"Division of {num4}: {calculator.divide(45,0)}")
