@@ -27,6 +27,3 @@ if __name__ == "__main__":
 	# TO-DO: Uncomment and test the square root feature.
 	# num3 = 25
 	# print(f"The square root of {num3} = {calculator.square_root(num3)}")
-	# Uncomment the square_root function and test it
-	# def square_root(self, x):
-	#     return math.sqrt(x)
